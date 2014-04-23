@@ -17,9 +17,9 @@
     values[0].forEach(function(num, index){
       num *= 1;
       var exp = values[1][index]*1;
-      var ans = 1;
+        var result = 1;
       for(var i = 0; i < exp; ++i){
-        ans *= num;
+        result *= num;
       }
       var $divTop = $('<div>').addClass('top');
       var $divBottom = $('<div>').addClass('bottom');
@@ -28,7 +28,7 @@
       var $topSup = $('<sup>').text(exp);
       $divTop.text(topText);
       $divTop.append($topSup);
-      $divBottom.text(ans);
+      $divBottom.text(result);
       $div.append($divTop);
       $div.append($divBottom);
       $('.results').append($div);

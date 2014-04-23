@@ -9,12 +9,7 @@
 
   function makeArray(){
     var input = $('#value').val().split(',');
-    var words = [];
-    for(var i = 0; i < input.length; i++){
-      words.push(i+1);
-    }
     createBox(input);
-    return words;
   }
 
   function createBox(input){

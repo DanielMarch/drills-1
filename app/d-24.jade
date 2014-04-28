@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Drill 24
+    link(rel='stylesheet', href='./css/d-24.css')
+  body
+    h1 Wind Speed
+    #controls
+      input#zip(type='number' placeholder='Enter 1 zipcode')
+      button#get Wind Speed
+    #chartdiv
+
+    script(src='./js/vendor/jquery-2.1.0.js')
+    script(src="http://www.amcharts.com/lib/3/amcharts.js")
+    script(src="http://www.amcharts.com/lib/3/gauge.js")
+    script(src="http://www.amcharts.com/lib/3/themes/light.js")
+    script(src='./js/source/d-24.js')
